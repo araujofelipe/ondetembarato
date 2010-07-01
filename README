@@ -1,1 +1,3 @@
 Description: Application wich allow find and register a product by name, by price and/or by location, showing the most lower price first.
+
+TODO: write test`s with cucumber and rspec for product register.
