@@ -14,7 +14,7 @@ development:
   database: ondetembarato_development
   pool: 5
   username: ondetembarato
-  password:
+  password: 123456
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -34,18 +34,21 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+#production:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: ondetembarato_production
+#  pool: 5
+#  username: ondetembarato
+#  password:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: ondetembarato_test
   pool: 5
   username: ondetembarato
-  password:
+  password: 123456
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: ondetembarato_production
-  pool: 5
-  username: ondetembarato
-  password:
+
+cucumber:
+  <<: *test
