@@ -9,6 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20100701050409) do
+
+  create_table "produtos", :force => true do |t|
+    t.string   "nome"
+    t.float    "preco"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
