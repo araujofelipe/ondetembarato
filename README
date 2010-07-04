@@ -2,5 +2,5 @@ Description: Application wich allow find and register a product by name, by pric
 
 This branch has created for development with mongodb. Enjoy this.
 
-TODO: verify why regiter product send to wrong path. This finalize cucumber`s test`s
+TODO: verify why method 'create' in ProdutosController send to wrong path. This finalize cucumber`s test`s
 TODO: write test`s with cucumber and rspec for product register.
