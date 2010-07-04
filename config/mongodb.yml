@@ -1,0 +1,17 @@
+# config/mongodb.yml
+base: &base
+  adapter: mongodb
+  database: ondetembarato
+#These are needed to authenticate with your db
+#should it run on another server
+development:
+  <<: *base
+
+test:
+  <<: *base
+  database: ondetembarato-test
+
+
+production:
+  <<: *base
+

@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div id='notice' >
+			<p style='color: green'>
+			<%= flash[:notice] %> 
+			</p>
+		</div>
+		<div id='formulario'>
+		<% form_for @produto, :url => {:action => 'create' } do |f| -%>
+			<%= f.label :nome %> </br>
+			<%= f.text_field :nome %></br>
+			<%= f.label :preco %> </br>
+			<%= f.text_field :preco %></br>
+			
+			<%= f.submit "Registrar"%>
+		
+		<% end -%>
+		</div>
+	</body>
+	
+</html>
