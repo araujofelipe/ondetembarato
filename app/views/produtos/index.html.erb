@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+		
+		<div id="menu"> <%= link_to "Novo Produto", {:controller => 'produtos', :action =>'add'} %>  </div>
+		<div id="lista">
+			<% for produto in @produtos %>
+				<br />
+				<b><%=h produto.nome %></b><br/>
+				<%=h produto.preco %>
+			<% end %>
+		</div>
+		
+		
+	</body>
+	
+</html>

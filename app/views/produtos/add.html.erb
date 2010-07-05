@@ -2,6 +2,25 @@
 	<head>
 		<title></title>
 	</head>
-	<body></body>
+	<body>
+		
+		<div id="notice"> <p style="color : green"><%= flash[:notice]%> </p> </div>
+		<div id="form">
+			
+			<% form_for @produto , :url => {:action => 'create'} do |f| -%>
+				
+				<%= f.label :nome %> <br />
+				<%= f.text_field :nome %> <br />
+				<%= f.label :preco %> <br />
+				<%= f.text_field :preco %> <br />
+				
+				<%= f.submit "Registrar"%>
+				
+			<% end -%>
+			
+		</div>
+		
+		
+	</body>
 	
 </html>
