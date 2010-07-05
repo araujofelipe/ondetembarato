@@ -1,5 +1,5 @@
 Dado /^que estou na pagina adicionar produtos$/ do
-  visit "/produtos"
+  visit "/produtos/add"
 end
 
 Dado /^preencho o campo "([^"]*)" com "([^"]*)"$/ do |campo, valor|
