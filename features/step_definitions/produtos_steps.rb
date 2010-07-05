@@ -11,5 +11,6 @@ Dado /^aperto o botao "([^"]*)"$/ do |botao|
 end
 
 Entao /^eu deveria ver "([^"]*)"$/ do |texto|
-  response.should have_content(texto)
+  response.should contain(texto)  	
+
 end
